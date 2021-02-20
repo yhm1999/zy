@@ -1,0 +1,24 @@
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">HEADER</li>
+            <!-- Optionally, you can add icons to the links -->
+            <!-- 用三元运算符： index===0？'active' ： '' -->
+            <!-- 从index来 index=0
+                 从gro来  index=1
+                 从user来  index=2
+                .......
+              当地址栏显示那个页面，那个左边栏对应的字高亮 ，点击字重新跳转对应的页面-->
+            <li class="<%= index===0 ? 'active' : '' %>"><a href="/"><i class="fa fa-bank"></i> <span>首页</span></a></li>
+            <li class="<%= index===1 ? 'active' : '' %>"><a href="/pro"><i class="fa fa-map"></i> <span>商品管理</span></a></li>
+            <li class="<%= index===2 ? 'active' : '' %>"><a href="/user"><i class="fa fa-safari"></i> <span>用户管理</span></a></li>
+            <li class="<%= index===3 ? 'active' : '' %>"><a href="/admin"><i class="fa fa-archive"></i> <span>员工管理</span></a></li>
+            <li class="<%= index===4 ? 'active' : '' %>"><a href="/banner"><i class="fa fa-arrows"></i> <span>banner管理</span></a></li>
+            <li class="<%= index===5 ? 'active' : '' %>"><a href="/cart"><i class="fa fa-bicycle"></i> <span>购物车管理</span></a></li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>

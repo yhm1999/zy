@@ -1,0 +1,6 @@
+{
+    "port": 3233,
+    "watch": true,
+    "static": "./public",
+    "routes": "./config/route.json"
+  }

@@ -1,0 +1,21 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch --port 3200 --static ./public ./sql/db.json ",
+    "mock": "json-server --watch --port 3233  ./sql/db.js",
+    "mock2": "json-server --watch --port 3233 --routes ./config/route.json  ./sql/db.js",
+  
+    "mock3": "json-server  -c ./config/json-server.json  ./sql/db.js",
+    "mock4": "nodemon ./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "mockjs": "^1.1.0"
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,li,ol{
+          list-style: none;
+      }
+      body{
+        width: 100%;
+        height: 100%;
+        background: url("images/img/photo1.png") no-repeat;
+        /* background-color: rgb(19, 17, 17); */
+        background-size: cover;
+      }
+      .root {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background-color: skyblue; */
+        /* background: url("/images/img/photo1.jpg") no-repeat; */
+        /* background-color: rgb(19, 17, 17); */
+      }
+      .bgc {
+        
+        display: flex;
+        justify-content: center;
+      }
+      /* .login-box-bodyWrap{
+        display: flex;
+        justify-content: center;
+        /* margin-top: 10px; */
+      /* } */ 
+      .login {
+        display: block;
+        font-size: 35px;
+        color: #ffffff;
+        text-align: center;
+        font-family: Constantia;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      #container {
+        display: block;
+        width: 600px;
+        height: 300px;
+     
+        margin: 0 auto;
+        position: relative;
+        top: 250px;
+        border-radius: 10px;
+        /* background: url("/images/img/a.png") ; */
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      #container input{
+          width: 242px;
+          height: 37px;
+          margin: 20px auto;
+      }
+      #container label{
+          font-size: 25px;
+          color: wheat;
+          
+      }
+      #container ul{
+          width: 600px;
+          height: 200x;
+          /* background: violet; */
+          text-align: center;
+      }
+      #sub{
+          width: 100px;
+          height: 25px;
+          background-color: black;
+          color: wheat;
+          font-size: 15px;
+          border-radius: 15%;
+          box-shadow: -3px 2px 0px rgb(63, 63, 63) inset;
+          box-shadow: 3px 0px 0px rgb(63, 63, 63) inset;
+
+      }
+       
+    </style>
+  </head>
+  <body>
+      <div class="root">
+        <!-- <div class="bgc">
+            <h1 class="title">商品管理登录系统</h1>     
+        </div> -->
+        <div class="login-box-bodyWrap">
+            <div class="login-box-body animated bounceInLeft" id="container">
+              <span class="login">登录 ☃</span>
+
+
+              <!-- 去找login.js里面的/in
+                  post方式传参  -->
+                <form action="/login/in" method="post">
+                   
+       
+                      <ul>
+                        <li>  
+                            <label for="">账号 </label>
+                            <input
+                              type="text"
+                              placeholder="请输入你的管理员账号"
+                              id="username"
+                              name="username"
+                            />
+                         
+                        </li>
+                        <li>
+                            <label for="" >密码  </label>
+                            <input
+                              type="password"
+                              placeholder="请输入你的管理员密码"
+                              id="password"
+                              name="password"
+                            />
+                        </li>
+                        <li>
+                            <button type="submit"  id="sub">登录</button>
+                        </li>
+                    </ul>
+                   
+                  
+                </form>
+                <!-- /.social-auth-links -->
+                <!-- <a href="#">如你忘记了密码，请联系你的负责人</a> -->
+                 
+              </div>
+        </div>
+        
+      </div>
+    
+  </body>
+</html>
